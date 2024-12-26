@@ -1,5 +1,10 @@
 # Godot 4+ specific ignores
-game/.godot/
+.godot/
+game/android/
+
+# Krita
+*~
 
 # Blender backups
 *.blend?
+*.tmp
