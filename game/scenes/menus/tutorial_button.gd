@@ -15,5 +15,4 @@ func _ready() -> void:
 	$TextureButton.texture_normal = tutorial_image
 
 func _on_texture_button_pressed() -> void:
-	print("tutorial scene")
-	print(tutorial_scene.resource_path)
+	get_tree().change_scene_to_file(tutorial_scene.resource_path)
