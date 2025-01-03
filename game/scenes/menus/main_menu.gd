@@ -1,16 +1,10 @@
+@tool
 extends Control
 
-# @onready var next_scene = load("res://scenes/levels/level_1.tscn")
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$Version.text = "v" + ProjectSettings.get_setting("application/config/version")
 	#var sound_button = $VBoxContainer/CenterBottom/VBoxContainer/Sound
 	#sound_button.button_pressed = ProjectControls.is_audio_master_on()
-
-func _on_start_pressed():
-	pass
-	# get_tree().change_scene_to_packed(next_scene)
 
 func _on_fullscreen_pressed():
 	ProjectControls.toggle_fullscreen()

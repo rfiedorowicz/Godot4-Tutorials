@@ -33,7 +33,7 @@ grow_vertical = 2
 [node name="CenterTop" type="CenterContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.33
+size_flags_stretch_ratio = 0.25
 
 [node name="Label" type="Label" parent="VBoxContainer/CenterTop"]
 layout_mode = 2
@@ -61,3 +61,24 @@ tutorial_image = ExtResource("3_ajt6p")
 visible = false
 layout_mode = 2
 tutorial_image = ExtResource("3_ajt6p")
+
+[node name="Tutorial03" parent="VBoxContainer/CenterBottom/GridContainer" instance=ExtResource("2_476dn")]
+visible = false
+layout_mode = 2
+tutorial_image = ExtResource("3_ajt6p")
+
+[node name="Version" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_top = -72.0
+offset_right = -28.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 52
+text = "v0.1"
+horizontal_alignment = 2
