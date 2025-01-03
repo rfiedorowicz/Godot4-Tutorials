@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://c23apbpii8nbk"]
 
 [ext_resource type="Script" path="res://scenes/menus/main_menu.gd" id="1_afffk"]
-[ext_resource type="Texture2D" uid="uid://btqua7uwew6sf" path="res://assets/ui/checkbox_on.png" id="2_ocf16"]
-[ext_resource type="Texture2D" uid="uid://cky7j8nvlydwr" path="res://assets/ui/checkbox_off.png" id="3_tfs7m"]
+[ext_resource type="PackedScene" uid="uid://bm2locmw78n65" path="res://scenes/menus/tutorial_button.tscn" id="2_476dn"]
+[ext_resource type="Texture2D" uid="uid://bhqkn60keuvuq" path="res://assets/thumbnails/01_test_thumbain.png" id="3_ajt6p"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.14902, 0.333333, 0.203922, 1)
+color = Color(0.0196078, 0.101961, 0.219608, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -33,38 +33,31 @@ grow_vertical = 2
 [node name="CenterTop" type="CenterContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.33
 
 [node name="Label" type="Label" parent="VBoxContainer/CenterTop"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 45
-text = "Main Title"
+theme_override_font_sizes/font_size = 120
+text = "Tutorials by Rafa"
+horizontal_alignment = 1
 
 [node name="CenterBottom" type="CenterContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/CenterBottom"]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/CenterBottom"]
+layout_mode = 2
+columns = 3
+
+[node name="Tutorial00" parent="VBoxContainer/CenterBottom/GridContainer" instance=ExtResource("2_476dn")]
 layout_mode = 2
 
-[node name="Start" type="Button" parent="VBoxContainer/CenterBottom/VBoxContainer"]
+[node name="Tutorial01" parent="VBoxContainer/CenterBottom/GridContainer" instance=ExtResource("2_476dn")]
+visible = false
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "START"
-flat = true
+tutorial_image = ExtResource("3_ajt6p")
 
-[node name="Fullscreen" type="Button" parent="VBoxContainer/CenterBottom/VBoxContainer"]
+[node name="Tutorial02" parent="VBoxContainer/CenterBottom/GridContainer" instance=ExtResource("2_476dn")]
+visible = false
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Fullscreen"
-flat = true
-
-[node name="Sound" type="CheckButton" parent="VBoxContainer/CenterBottom/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-theme_override_icons/checked = ExtResource("2_ocf16")
-theme_override_icons/unchecked = ExtResource("3_tfs7m")
-text = "Sound"
-
-[connection signal="pressed" from="VBoxContainer/CenterBottom/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/CenterBottom/VBoxContainer/Fullscreen" to="." method="_on_fullscreen_pressed"]
-[connection signal="toggled" from="VBoxContainer/CenterBottom/VBoxContainer/Sound" to="." method="_on_sound_toggled"]
+tutorial_image = ExtResource("3_ajt6p")
