@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lojoug317roy"
-path="res://.godot/imported/test_player.png-3807c3e4435b9d09a6974a399657f9e1.ctex"
+uid="uid://nfkcrvflm5o6"
+path="res://.godot/imported/2025_01_07 Knight Christopher.jpg-989291c419a98283e36156a5dd78e3da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/test_player.png"
-dest_files=["res://.godot/imported/test_player.png-3807c3e4435b9d09a6974a399657f9e1.ctex"]
+source_file="res://assets/concepts/2025_01_07 Knight Christopher.jpg"
+dest_files=["res://.godot/imported/2025_01_07 Knight Christopher.jpg-989291c419a98283e36156a5dd78e3da.ctex"]
 
 [params]
 

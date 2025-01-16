@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwq2503yqqmsr"
-path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"
+uid="uid://b7827l44yemkx"
+path="res://.godot/imported/2025_01_07 Knight Christopher choice.jpg-c338aabf2d6b51e2c8d5a33b7777da8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"]
+source_file="res://assets/concepts/2025_01_07 Knight Christopher choice.jpg"
+dest_files=["res://.godot/imported/2025_01_07 Knight Christopher choice.jpg-c338aabf2d6b51e2c8d5a33b7777da8a.ctex"]
 
 [params]
 
